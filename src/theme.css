@@ -1,0 +1,17 @@
+:root {
+    /* Cores */
+    --bg-page: #0f0f0f;          /* Cinza muito escuro, quase preto */
+    --bg-card: #1e1e1e;          /* Cinza levemente mais claro */
+    --text-color: #f0f0f0;        /* Branco/cinza claro */
+    --gradient-start: #6b21a5;     /* Roxo */
+    --gradient-end: #10b981;       /* Verde */
+    
+    /* Geometria */
+    --border-radius-small: 4px;    /* Bordas levemente arredondadas */
+    --border-radius-large: 16px;    /* Bordas muito arredondadas */
+    --spacing-unit: 16px;           /* Espaçamento padrão */
+    
+    /* Animação */
+    --transition-speed: 0.3s;       /* Velocidade da transição */
+    --transition-ease: ease-in-out; /* Curva de animação */
+}

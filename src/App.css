@@ -1,0 +1,111 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 1. Layout da Página */
+body {
+  background-color: var(--bg-page);
+  color: var(--text-color);
+  font-family: system-ui, -apple-system, sans-serif;
+  
+  /* Desafio de alinhamento */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  
+  /* Remove margens padrão */
+  margin: 0;
+  padding: var(--spacing-unit);
+}
+
+/* 2. O Cartão (main) */
+main {
+  background-color: var(--bg-card);
+  border-radius: var(--border-radius-large);
+  padding: calc(var(--spacing-unit) * 2);
+  width: 100%;
+  max-width: 400px;
+  
+  /* Sombra para profundidade */
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5),
+              0 8px 10px -6px rgba(0, 0, 0, 0.3);
+}
+
+/* Título */
+h1 {
+  font-size: 1.75rem;
+  margin-bottom: calc(var(--spacing-unit) / 2);
+}
+
+/* Parágrafo de instrução */
+p {
+  color: rgba(240, 240, 240, 0.7);
+  margin-bottom: var(--spacing-unit);
+  font-size: 0.9rem;
+}
+
+/* 3. Campos de Texto (input) */
+input {
+  width: 100%;
+  padding: var(--spacing-unit);
+  margin-bottom: var(--spacing-unit);
+  
+  /* Estilo do input */
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--border-radius-small);
+  color: var(--text-color);
+  font-size: 1rem;
+  
+  /* Transição suave */
+  transition: border-color var(--transition-speed) var(--transition-ease);
+}
+
+/* Placeholder styling */
+input::placeholder {
+  color: rgba(240, 240, 240, 0.4);
+}
+
+/* Micro-interação :focus */
+input:focus {
+  outline: none;
+  border-color: var(--gradient-end);
+}
+
+/* 4. O Botão */
+button {
+  width: 100%;
+  padding: var(--spacing-unit);
+  
+  /* Gradient background */
+  background-image: linear-gradient(
+    135deg, 
+    var(--gradient-start), 
+    var(--gradient-end)
+  );
+  
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  border-radius: var(--border-radius-small);
+  cursor: pointer;
+  
+  /* Transição para o hover */
+  transition: all var(--transition-speed) var(--transition-ease);
+}
+
+/* 5. Animações e Interações (:hover) */
+button:hover {
+  transform: scale(1.02);
+  opacity: 0.9;
+}
+
+/* Efeito de clique */
+button:active {
+  transform: scale(0.98);
+}
